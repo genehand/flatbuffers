@@ -391,8 +391,6 @@ std::string RelativeToRootPath(const std::string &project,
   return result;
 }
 
-#endif  // !FLATBUFFERS_LOCALE_INDEPENDENT
-
 std::string RemoveStringQuotes(const std::string &s) {
   auto ch = *s.c_str();
   return ((s.size() >= 2) && (ch == '\"' || ch == '\'') && (ch == s.back()))
